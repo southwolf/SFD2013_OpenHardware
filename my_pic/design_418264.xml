@@ -1,0 +1,198 @@
+<design>
+  <panels>4</panels>
+  <showMiddleDivider>false</showMiddleDivider>
+  <item type="Image">
+    <rotation>0</rotation>
+    <mirror>false</mirror>
+    <xPosition>70.4</xPosition>
+    <yPosition>5</yPosition>
+    <bmpScaleX>1</bmpScaleX>
+    <bmpScaleY>1</bmpScaleY>
+    <imagePath>http://yun.baozoumanhua.com/Project/RageMaker0/images/0/6.png</imagePath>
+    <objScaleX>0.854901909828186</objScaleX>
+    <objScaleY>0.854901909828186</objScaleY>
+    <ratioLock>true</ratioLock>
+    <objectLock>false</objectLock>
+    <childIndex>1</childIndex>
+    <layerID>0</layerID>
+    <layerY>180</layerY>
+    <toolOffsetY>0</toolOffsetY>
+  </item>
+  <item type="Image">
+    <rotation>0</rotation>
+    <mirror>false</mirror>
+    <xPosition>330.25</xPosition>
+    <yPosition>44.4</yPosition>
+    <bmpScaleX>1</bmpScaleX>
+    <bmpScaleY>1</bmpScaleY>
+    <imagePath>http://yun.baozoumanhua.com/Project/RageMaker0/images/4/1.png</imagePath>
+    <objScaleX>0.793049693107605</objScaleX>
+    <objScaleY>0.793049693107605</objScaleY>
+    <ratioLock>true</ratioLock>
+    <objectLock>false</objectLock>
+    <childIndex>3</childIndex>
+    <layerID>2</layerID>
+    <layerY>140</layerY>
+    <toolOffsetY>0</toolOffsetY>
+  </item>
+  <item type="Image">
+    <rotation>0</rotation>
+    <mirror>false</mirror>
+    <xPosition>55.2</xPosition>
+    <yPosition>242.95</yPosition>
+    <bmpScaleX>0.82</bmpScaleX>
+    <bmpScaleY>0.82</bmpScaleY>
+    <imagePath>http://yun.baozoumanhua.com/Project/RageMaker0/images/30/7.jpg</imagePath>
+    <objScaleX>0.523125171661377</objScaleX>
+    <objScaleY>0.523125171661377</objScaleY>
+    <ratioLock>true</ratioLock>
+    <objectLock>false</objectLock>
+    <childIndex>6</childIndex>
+    <layerID>6</layerID>
+    <layerY>80</layerY>
+    <toolOffsetY>2</toolOffsetY>
+  </item>
+  <item type="Image">
+    <rotation>0</rotation>
+    <mirror>false</mirror>
+    <xPosition>445.2</xPosition>
+    <yPosition>326.05</yPosition>
+    <bmpScaleX>1</bmpScaleX>
+    <bmpScaleY>1</bmpScaleY>
+    <imagePath>http://yun.baozoumanhua.com/Project/RageMaker0/images/5/14.png</imagePath>
+    <objScaleX>0.5935671925544739</objScaleX>
+    <objScaleY>0.5935671925544739</objScaleY>
+    <ratioLock>true</ratioLock>
+    <objectLock>false</objectLock>
+    <childIndex>8</childIndex>
+    <layerID>10</layerID>
+    <layerY>40</layerY>
+    <toolOffsetY>2</toolOffsetY>
+  </item>
+  <item type="Text">
+    <text>Open Hardware?Sounds Coooooooool!</text>
+    <xPosition>20</xPosition>
+    <yPosition>50</yPosition>
+    <txtXPosition>11.25</txtXPosition>
+    <txtYPosition>124</txtYPosition>
+    <txtWidth>250</txtWidth>
+    <txtHeight>59</txtHeight>
+    <txtColor>0xff0000</txtColor>
+    <txtSize>23</txtSize>
+    <txtFont>null</txtFont>
+    <txtAlign>left</txtAlign>
+    <txtBackground>false</txtBackground>
+    <bold>false</bold>
+    <backgroundColor>0x000000</backgroundColor>
+    <objectLock>false</objectLock>
+    <childIndex>2</childIndex>
+    <layerID>1</layerID>
+    <layerY>160</layerY>
+    <toolOffsetY>0</toolOffsetY>
+  </item>
+  <item type="Text">
+    <text>[ Shopping Cart →]</text>
+    <xPosition>20</xPosition>
+    <yPosition>50</yPosition>
+    <txtXPosition>334.9</txtXPosition>
+    <txtYPosition>-46</txtYPosition>
+    <txtWidth>250</txtWidth>
+    <txtHeight>33</txtHeight>
+    <txtColor>0xff0000</txtColor>
+    <txtSize>23</txtSize>
+    <txtFont>null</txtFont>
+    <txtAlign>center</txtAlign>
+    <txtBackground>false</txtBackground>
+    <bold>false</bold>
+    <backgroundColor>0x000000</backgroundColor>
+    <objectLock>false</objectLock>
+    <childIndex>4</childIndex>
+    <layerID>3</layerID>
+    <layerY>120</layerY>
+    <toolOffsetY>0</toolOffsetY>
+  </item>
+  <item type="Text">
+    <text>ShieldsModulesSensorsComponentsToolkitsSoldering Iron...</text>
+    <xPosition>20</xPosition>
+    <yPosition>50</yPosition>
+    <txtXPosition>472.9</txtXPosition>
+    <txtYPosition>-14</txtYPosition>
+    <txtWidth>250</txtWidth>
+    <txtHeight>204</txtHeight>
+    <txtColor>0x0</txtColor>
+    <txtSize>23</txtSize>
+    <txtFont>null</txtFont>
+    <txtAlign>left</txtAlign>
+    <txtBackground>false</txtBackground>
+    <bold>false</bold>
+    <backgroundColor>0x000000</backgroundColor>
+    <objectLock>false</objectLock>
+    <childIndex>5</childIndex>
+    <layerID>4</layerID>
+    <layerY>100</layerY>
+    <toolOffsetY>0</toolOffsetY>
+  </item>
+  <item type="Text">
+    <text>Let's Change the World!</text>
+    <xPosition>20</xPosition>
+    <yPosition>52</yPosition>
+    <txtXPosition>8.45</txtXPosition>
+    <txtYPosition>383</txtYPosition>
+    <txtWidth>250</txtWidth>
+    <txtHeight>33</txtHeight>
+    <txtColor>0x0</txtColor>
+    <txtSize>23</txtSize>
+    <txtFont>null</txtFont>
+    <txtAlign>left</txtAlign>
+    <txtBackground>false</txtBackground>
+    <bold>false</bold>
+    <backgroundColor>0x000000</backgroundColor>
+    <objectLock>false</objectLock>
+    <childIndex>7</childIndex>
+    <layerID>7</layerID>
+    <layerY>60</layerY>
+    <toolOffsetY>2</toolOffsetY>
+  </item>
+  <item type="Text">
+    <text>[ Credit Card Bill ]</text>
+    <xPosition>20</xPosition>
+    <yPosition>52</yPosition>
+    <txtXPosition>315.75</txtXPosition>
+    <txtYPosition>193.9</txtYPosition>
+    <txtWidth>250</txtWidth>
+    <txtHeight>33</txtHeight>
+    <txtColor>0xff0000</txtColor>
+    <txtSize>23</txtSize>
+    <txtFont>null</txtFont>
+    <txtAlign>left</txtAlign>
+    <txtBackground>false</txtBackground>
+    <bold>false</bold>
+    <backgroundColor>0x000000</backgroundColor>
+    <objectLock>false</objectLock>
+    <childIndex>9</childIndex>
+    <layerID>11</layerID>
+    <layerY>20</layerY>
+    <toolOffsetY>2</toolOffsetY>
+  </item>
+  <item type="Text">
+    <text>$1,000</text>
+    <xPosition>20</xPosition>
+    <yPosition>52</yPosition>
+    <txtXPosition>318.7</txtXPosition>
+    <txtYPosition>224</txtYPosition>
+    <txtWidth>250</txtWidth>
+    <txtHeight>51</txtHeight>
+    <txtColor>0xff0000</txtColor>
+    <txtSize>37</txtSize>
+    <txtFont>null</txtFont>
+    <txtAlign>left</txtAlign>
+    <txtBackground>false</txtBackground>
+    <bold>true</bold>
+    <backgroundColor>0x000000</backgroundColor>
+    <objectLock>false</objectLock>
+    <childIndex>10</childIndex>
+    <layerID>12</layerID>
+    <layerY>0</layerY>
+    <toolOffsetY>2</toolOffsetY>
+  </item>
+</design>

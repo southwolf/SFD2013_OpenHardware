@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Frome Open Source Software to Open Hardware - My Talk on SFD 2013 Qingdao</title>
+    <meta name="author" content="SouthWolf">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script type="text/javascript" scr="plugin/highlight/highlight.js"></script>
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+<div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+  <section>
+      <h1 style="font-size: 3em;">From <br />Open Source Software <br />to <br />Open Hardware</h1>
+      <br />
+     <p>SouthWolf&nbsp;&nbsp;&nbsp;(&nbsp;Song&nbsp;Fei&nbsp;)</p><p>Weibo: @southwolf1813</p>
+  </section>
+  
+  <section>
+    <section>
+      <h1>Open Source Software</h1>
+      <img style="height: 25%; background-color: #fff;" src="my_pic/Opensource.svg" />
+    </section>
+    <section>
+      <h1>Power of Community</h1>
+      <img style="width: 75%" src="my_pic/github-logo.jpg" />
+    </section>
+    <section>
+      <h1>Collection of Best Practice</h1>
+      <ul>
+        <li class="fragment">Stop trying reinvent the wheels.</li>
+        <li class="fragment">Fix them instead.</li>
+      </ul>
+    </section>
+    <section>
+      <h1>Open source projects I love most</h1>
+    </section>
+    <section>
+        <img src="my_pic/rails.png" />
+    </section> 
+    <section>
+      <img src="my_pic/bootstrap.png" />
+    </section>
+    <section>
+      <h2>What makes a great open source project</h2>
+      <ul>
+        <li class="fragment">User & Hacker friendly</li>
+        <li class="fragment">Well documented source code</li>
+        <li class="fragment">Clear designed interfaces</li>
+        <li class="fragment">Keep in touch with community</li>
+      </ul>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h1>Why Open Hardware?</h1>
+    </section>
+    <section>
+      <ul>
+        <li class="fragment">Bring ideas off your chair</li>
+        <br />
+        <li class="fragment">More fun with REAL objects</li>
+        <br />
+        <li class="fragment">Make your dream come true, make life better</li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>Great Open Hardware</h1>
+      <img style="background-color: white;" src="my_pic/Arduino_Uno_logo.png" />
+      <img style="background-color: white; width: 20%;"src="my_pic/RaspberryPi_Logo.png" />
+     </section>
+     <section>
+       <h1>Raspberry Pi</h1>
+       <p>Credit-card Sized Computer</p>
+       <img src="my_pic/raspberry_pi.png">
+     </section>
+     <section>
+       <h1>Arduino</h1>
+       <p>Single-board Microprocessor with Great Toolsets</p>
+       <img style="width: 40%;" src="my_pic/Arduino_Uno_-_R3.jpg" />
+     </section>
+  </section>
+  <section>
+    <section>
+      <h1>Why Arduino is great?</h1>
+      <ul>
+        <li>Cheap, easy to get</li>
+        <li>Expandable modules</li>
+        <li>Excellent programming interfaces</li>
+        <li>Open source community</li>
+      </ul>
+    </section>
+    <section>
+      <h2>C Code</h2>
+      <pre><code data-trim> 
+        void main(void) {
+          WDTCTL = WDTPW + WDTHOLD; // Password, and stop the timer
+          P1DIR = 0x40;             // P1 Direction is OUTPUT
+          P1OUT = 0;                // P1 OUTPUT low
+          BCSCTL3 |= LFXT1S_2;      // VLO
+          IFG1 &= ~OFIFG;           // Use DCO if clock fault
+          _bis_SR_register(SCG1 + SCG0);  //stop DCO to wait for VLO
+          BCSCTL2 |= SELM_3 + DIVM_3;
+          while(1) {
+            P1OUT = 0x40;
+            _delay_cycles(100);
+            P1OUT = 0;
+            _delay_cycles(5000);
+          }
+        }
+      </code></pre>
+    </section>
+    <section>
+    <h2>Arduino Code</h2>
+      <pre><code data-trim>
+        void setup() {                
+          pinMode(RED_LED, OUTPUT);     
+        }
+
+        void loop() {
+          digitalWrite(RED_LED, HIGH);   // turn the LED on 
+          delay(1000);               // wait for a second
+          digitalWrite(RED_LED, LOW);    // turn the LED off
+          delay(1000);               // wait for a second
+        }
+      </code></pre>
+      <h2 class="fragment">It's Easy!</h2>
+    </section>
+
+    <section>
+      <h2>Arduino is the brain</h2>
+      <h2>3D printing is the body</h2>
+    </section>
+    <section>
+      <img src="my_pic/3dp.jpg" />
+    </section>
+  </section>
+  <section>
+    <section>
+      <h1>Real World Open Hardware</h1>
+      <h3>Recent work of my friends</h3>
+    </section>
+
+    <section>
+      <h1>Microduino</h1>
+      <img style="width: 35%" src="my_pic/mic2.jpg" />
+      <p>A small, cheap, stackable Arduino</p>
+    </section>
+    <section>
+      <h1>Hex Quadcopter</h1>
+      <img style="width: 35%" src="my_pic/hex.jpg" />
+      <p>Arduino powered Quadcopter</p>
+      <p>3D printing Shells!</p>
+    </section>
+  </section>
+  <section>
+    <section>
+      <h1>I love Open Source because...</h1>
+    </section>
+    <section>
+      <h1>Make more friends</h1>
+      <img style="width: 75%" src="my_pic/superfriends.jpg" />
+    </section>
+    </section>
+  </section>
+
+  <section data-state="alert">
+    <section><h1>WARNING</h1></section>
+    <section>
+      <img width="960" src="my_pic/NoFree.png" />
+      <p style="font-size: 0.6em;">Thanks &nbsp;&nbsp;&nbsp;<u>www.BaoZouManHua.com</u>&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;@ShiningRay</p>
+    </section>
+    <section>
+      <h1>FREEDOM IS NOT FREE</h1>
+      <img src="my_pic/yao.png" />
+    </section>
+
+  </section>
+
+  <section>
+    <h2>Thank You!</h2>
+    <h3>Now go make something cool</h3>
+    <img style="width: 20%" src="my_pic/diy.jpg" />
+    <p>Made by hand with <a href="https://github.com/hakimel/reveal.js">reveal.js</a></p>
+    <br />
+    <p>Contact Me</p>
+    <p>Weibo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@southwolf1813</p>
+  </section>
+
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
